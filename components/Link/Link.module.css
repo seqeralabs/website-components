@@ -1,0 +1,15 @@
+.link {
+  cursor: pointer;
+  border-bottom: 1px solid;
+  border-color: currentColor;
+  padding-bottom: 1px;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.noBorder {
+  border: 0;
+  padding-bottom: 0;
+}

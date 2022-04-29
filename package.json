@@ -1,0 +1,25 @@
+{
+  "name": "website-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seqeralabs/website-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seqeralabs/website-components/issues"
+  },
+  "homepage": "https://github.com/seqeralabs/website-components#readme",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "gatsby": "^4.13.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0"
+  }
+}
