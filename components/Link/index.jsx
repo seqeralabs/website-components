@@ -2,7 +2,7 @@
 import classnames from 'classnames';
 import { Link as GatsbyLink } from 'gatsby';
 import React from 'react';
-import PropTypes from '../../util/PropTypes';
+import PropTypes from '../../utils/PropTypes';
 import * as styles from './Link.module.css';
 
 const propTypes = {
