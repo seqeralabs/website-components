@@ -18,6 +18,7 @@
   "homepage": "https://github.com/seqeralabs/website-components#readme",
   "dependencies": {
     "classnames": "^2.3.1",
+    "framer-motion": "^6.3.3",
     "gatsby": "^4.13.1",
     "prop-types": "^15.8.1",
     "react": "^18.1.0"

@@ -5,7 +5,6 @@ Includes icon components:
 - CheckIcon
 
 Includes regular components:
-- HubspotForm
 - Link
 - List
 - Reveal
