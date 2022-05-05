@@ -1,6 +1,6 @@
 {
   "name": "website-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-intersection-observer": "^9.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.7"
   }
 }
