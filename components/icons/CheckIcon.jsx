@@ -3,14 +3,10 @@ import PropTypes from '../../utils/PropTypes';
 
 const propTypes = {
     className: PropTypes.string,
-    size: PropTypes.string,
-    color: PropTypes.string,
 };
 
 const defaultProps = {
     className: null,
-    size: '20',
-    color: 'inherit',
 };
 
 const CheckIcon = ({ className }) => (
