@@ -25,5 +25,7 @@ This library includes such icon components:
 - CheckIcon
 
 This library includes such common components:
+- Reveal
+- RevealOnScroll
 - ScrollSnap
 - Seo
