@@ -28,4 +28,3 @@ This library includes such common components:
 - Reveal
 - RevealOnScroll
 - ScrollSnap
-- Seo
