@@ -4,8 +4,5 @@ Includes icon components:
 - BulletIcon
 - CheckIcon
 
-Includes regular components:
-- Link
-- List
-- Reveal
-- RevealOnScroll
+Includes common components:
+- SEO
