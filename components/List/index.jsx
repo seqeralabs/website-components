@@ -9,10 +9,9 @@ const ListIcon = ({ type, className }) => {
     switch (type) {
         case 'bullet':
             return <BulletIcon className={className} />;
+        default:
         case 'check':
             return <CheckIcon className={className} />;
-        default:
-            return <></>;
     }
 };
 
@@ -40,7 +39,7 @@ List.defaultProps = {
     children: null,
     className: '',
     iconClassName: 'text-indigo-600',
-    type: 'check',
+    type: null,
 };
 
 const ListItem = ({ children, className, iconClassName, type }) => (
