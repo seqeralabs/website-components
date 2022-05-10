@@ -29,4 +29,5 @@ This library includes such common components:
 - Link
 - Reveal
 - RevealOnScroll
+- RevealOnView
 - ScrollSnap
