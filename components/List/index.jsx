@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import PropTypes from '../../util/PropTypes';
+import PropTypes from '../../utils/PropTypes';
 import BulletIcon from '../icons/BulletIcon';
 import CheckIcon from '../icons/CheckIcon';
 
