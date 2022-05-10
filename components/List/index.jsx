@@ -40,7 +40,7 @@ List.defaultProps = {
     children: null,
     className: '',
     iconClassName: 'text-indigo-600',
-    type: null,
+    type: 'check',
 };
 
 const ListItem = ({ children, className, iconClassName, type }) => (
@@ -50,7 +50,7 @@ const ListItem = ({ children, className, iconClassName, type }) => (
                 type={type}
                 className={classnames(
                     iconClassName,
-                    'mr-2.5 mt-1 h-6 w-6',
+                    'mr-2 h-6 w-6',
                 )}
             />
         )}
