@@ -21,8 +21,8 @@ const List = ({ children, className, iconClassName, type }) => (
     })}>
         {React.Children.map(children, item => (
             React.cloneElement(item, {
-                type: item.props.type || type,
-                iconClassName: item.props.iconClassName || iconClassName,
+                type: type,
+                iconClassName: iconClassName,
             })
         ))}
     </ul>
@@ -45,7 +45,7 @@ List.defaultProps = {
 const ListItem = ({ children, className, iconClassName, type }) => (
     <li className={classnames(
         className,
-        'flex mt-4 first:mt-0',
+        'mt-4 first:mt-0',
         {
             'flex': type !== 'ordered',
         }
