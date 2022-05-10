@@ -5,6 +5,7 @@ import Box from './components/Box';
 import Link from './components/Link';
 import Reveal from './components/Reveal';
 import RevealOnScroll from './components/RevealOnScroll';
+import RevealOnView from './components/RevealOnView';
 import ScrollSnap from './components/ScrollSnap';
 
 export {
@@ -12,7 +13,8 @@ export {
   CheckIcon,
   Box,
   Link,
-  RevealOnScroll,
   Reveal,
+  RevealOnScroll,
+  RevealOnView,
   ScrollSnap,
 };
