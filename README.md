@@ -19,6 +19,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   });
 };
 ```
+- Extend tailwind.config.js content array configuration with the module path: `node_modules/website-components/**/*.jsx`
 
 This library includes such icon components:
 - BulletIcon

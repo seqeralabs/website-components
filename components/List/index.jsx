@@ -50,7 +50,7 @@ const ListItem = ({ children, className, iconClassName, type }) => (
                 type={type}
                 className={classnames(
                     iconClassName,
-                    'mr-2 h-6 w-6',
+                    'mt-1 mr-2.5 h-6 w-6',
                 )}
             />
         )}
