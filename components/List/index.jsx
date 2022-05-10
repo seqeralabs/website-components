@@ -43,7 +43,14 @@ List.defaultProps = {
 };
 
 const ListItem = ({ children, className, iconClassName, type }) => (
-    <li className={classnames(className, 'flex mt-4 first:mt-0')}>
+    <li className={classnames(
+        className,
+        'flex mt-4 first:mt-0',
+        {
+            'flex': type !== 'ordered',
+        }
+    )}
+    >
         {type !== 'ordered' && (
             <ListIcon
                 type={type}
@@ -53,7 +60,7 @@ const ListItem = ({ children, className, iconClassName, type }) => (
                 )}
             />
         )}
-        <span className="flex-1">
+        <span className={classnames(type !== 'ordered' ? 'flex-1' : '')}>
             {children}
         </span>
     </li>
