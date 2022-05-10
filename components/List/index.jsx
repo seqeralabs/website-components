@@ -15,20 +15,25 @@ const ListIcon = ({ type, className }) => {
     }
 };
 
-const List = ({ children, className, iconClassName, type }) => (
-    <ul className={classnames(className, {
-         'list-decimal': type === 'ordered',
-    })}>
-        {React.Children.map(children, item => (
-            React.cloneElement(item, {
-                type: item.props.type || type,
-                iconClassName: item.props.iconClassName || iconClassName,
-            })
-        ))}
-    </ul>
-);
+const List = ({ children, className, iconClassName, type }) => {
+    const Component = as || 'ul';
+
+    return (
+        <Component className={classnames(className, {
+             'list-decimal': type === 'ordered',
+        })}>
+            {React.Children.map(children, item => (
+                React.cloneElement(item, {
+                    type: item.props.type || type,
+                    iconClassName: item.props.iconClassName || iconClassName,
+                })
+            ))}
+        </Component>
+    );
+};
 
 List.propTypes = {
+    as: PropTypes.elementType,
     children: PropTypes.node,
     className: PropTypes.string,
     iconClassName: PropTypes.string,
@@ -36,6 +41,7 @@ List.propTypes = {
 };
 
 List.defaultProps = {
+    as: null,
     children: null,
     className: '',
     iconClassName: 'text-indigo-600',
