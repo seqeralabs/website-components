@@ -21,8 +21,8 @@ const List = ({ children, className, iconClassName, type }) => (
     })}>
         {React.Children.map(children, item => (
             React.cloneElement(item, {
-                type: type,
-                iconClassName: iconClassName,
+                type: item.props.type || type,
+                iconClassName: item.props.iconClassName || iconClassName,
             })
         ))}
     </ul>
