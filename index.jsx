@@ -20,6 +20,7 @@ export {
   CheckIcon,
   LinkedInIcon,
   MailIcon,
+  PlusIcon,
   TwitterIcon,
   Box,
   ExpansionPanel,
