@@ -24,6 +24,9 @@ exports.onCreateWebpackConfig = ({ actions, loaders }) => {
 This library includes such icon components:
 - BulletIcon
 - CheckIcon
+- LinkedInIcon
+- MailIcon
+- TwitterIcon
 
 This library includes such common components:
 - Box
@@ -33,3 +36,4 @@ This library includes such common components:
 - RevealOnScroll
 - RevealOnView
 - ScrollSnap
+- SharingButtons
