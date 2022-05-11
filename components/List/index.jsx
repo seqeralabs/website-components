@@ -15,7 +15,7 @@ const ListIcon = ({ type, className }) => {
     }
 };
 
-const List = ({ children, className, iconClassName, type }) => {
+const List = ({ children, className, iconClassName, type, as }) => {
     const Component = as || 'ul';
 
     return (
