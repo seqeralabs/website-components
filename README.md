@@ -26,10 +26,12 @@ This library includes such icon components:
 - CheckIcon
 - LinkedInIcon
 - MailIcon
+- PlusIcon
 - TwitterIcon
 
 This library includes such common components:
 - Box
+- ExpansionPanel
 - Link
 - List
 - Reveal
