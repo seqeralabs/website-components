@@ -12,6 +12,7 @@ const propTypes = {
     className: PropTypes.string,
     activeClassName: PropTypes.string,
     iconClassName: PropTypes.string,
+    activeIconClassName: PropTypes.string,
     defaultExpanded: PropTypes.bool,
     children: PropTypes.node,
     marked: PropTypes.bool,
@@ -21,6 +22,7 @@ const defaultProps = {
     className: '',
     activeClassName: '',
     iconClassName: '',
+    activeIconClassName: '',
     defaultExpanded: false,
     children: null,
     marked: false,
@@ -28,7 +30,15 @@ const defaultProps = {
 
 const ExpansionContext = createContext();
 
-const ExpansionPanel = ({ children, defaultExpanded, marked, className, activeClassName, iconClassName }) => {
+const ExpansionPanel = ({
+    children,
+    defaultExpanded,
+    marked,
+    className,
+    activeClassName,
+    iconClassName,
+    activeIconClassName,
+}) => {
     const [expanded, setExpanded] = useState(defaultExpanded);
     const toggleExpanded = useCallback(() => setExpanded(!expanded), [expanded, setExpanded]);
 
@@ -37,7 +47,7 @@ const ExpansionPanel = ({ children, defaultExpanded, marked, className, activeCl
             [className]: !isSSR && !marked,
             [activeClassName]: !isSSR && marked,
         })}>
-            <ExpansionContext.Provider value={{ expanded, toggleExpanded, marked, iconClassName }}>
+            <ExpansionContext.Provider value={{ expanded, toggleExpanded, marked, iconClassName, activeIconClassName }}>
                 {children}
             </ExpansionContext.Provider>
         </div>
@@ -74,7 +84,7 @@ const ExpansionPanelSummary = ({ children }) => {
                       },
                   )}
               >
-                  <PlusIcon className={classnames('h-6 w-6', iconClassName)} />
+                  <PlusIcon className={classnames('h-6 w-6', (expanded ? activeIconClassName : iconClassName))} />
                   <span className="sr-only">
                       {expanded ? 'close' : 'open'}
                   </span>
@@ -127,11 +137,16 @@ ExpansionPanelDetail.defaultProps = {
     children: null,
 };
 
-const ExpansionPanelGroup = ({ children }) => (
+const ExpansionPanelGroup = ({ children, className, activeClassName, iconClassName, activeIconClassName }) => (
     <div role="tablist">
-        {React.Children.map(children, child => (
+        {React.Children.map(children, item => (
             <div className="mt-4 first:mt-0">
-                {child}
+                {React.cloneElement(item, {
+                    className: item.props.className || className,
+                    activeClassName: item.props.activeClassName || activeClassName,
+                    iconClassName: item.props.iconClassName || iconClassName,
+                    activeIconClassName: item.props.activeIconClassName || activeIconClassName,
+                })}
             </div>
         ))}
     </div>
@@ -139,10 +154,18 @@ const ExpansionPanelGroup = ({ children }) => (
 
 ExpansionPanelGroup.propTypes = {
     children: PropTypes.node,
+    className: PropTypes.string,
+    activeClassName: PropTypes.string,
+    iconClassName: PropTypes.string,
+    activeIconClassName: PropTypes.string,
 };
 
 ExpansionPanelGroup.defaultProps = {
     children: null,
+    className: '',
+    activeClassName: '',
+    iconClassName: '',
+    activeIconClassName: '',
 };
 
 ExpansionPanel.Summary = ExpansionPanelSummary;

@@ -13,7 +13,7 @@ const defaultProps = {
 };
 
 const Box = ({ children, className }) => (
-    <div className={classnames('bg-white shadow-xl overflow-hidden', className)}>
+    <div className={classnames('rounded-md bg-white shadow-xl overflow-hidden', className)}>
         {children}
     </div>
 );
