@@ -22,12 +22,15 @@ exports.onCreateWebpackConfig = ({ actions, loaders }) => {
 - Extend tailwind.config.js content array configuration with the module path: `node_modules/website-components/**/*.jsx`
 
 This library includes such icon components:
+- ArrowRightIcon
 - BulletIcon
 - CheckIcon
 - LinkedInIcon
 - MailIcon
 - PlusIcon
+- SpotifyIcon
 - TwitterIcon
+- YoutubeIcon
 
 This library includes such common components:
 - Box
