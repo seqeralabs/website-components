@@ -9,6 +9,7 @@ import TwitterIcon from './components/icons/TwitterIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 
 import Box from './components/Box';
+import Button from './components/Button';
 import ExpansionPanel from './components/ExpansionPanel';
 import Link from './components/Link';
 import List from './components/List';
@@ -21,6 +22,7 @@ import SharingButtons from './components/SharingButtons';
 export {
   ArrowRightIcon,
   BulletIcon,
+  Button,
   CheckIcon,
   LinkedInIcon,
   MailIcon,

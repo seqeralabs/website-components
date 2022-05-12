@@ -34,6 +34,7 @@ This library includes such icon components:
 
 This library includes such common components:
 - Box
+- Button
 - ExpansionPanel
 - Link
 - List
