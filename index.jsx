@@ -8,6 +8,7 @@ import SpotifyIcon from './components/icons/SpotifyIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 
+import BlogPostMeta from './components/BlogPostMeta';
 import Box from './components/Box';
 import Button from './components/Button';
 import ExpansionPanel from './components/ExpansionPanel';
@@ -22,7 +23,6 @@ import SharingButtons from './components/SharingButtons';
 export {
   ArrowRightIcon,
   BulletIcon,
-  Button,
   CheckIcon,
   LinkedInIcon,
   MailIcon,
@@ -30,7 +30,9 @@ export {
   SpotifyIcon,
   TwitterIcon,
   YoutubeIcon,
+  BlogPostMeta,
   Box,
+  Button,
   ExpansionPanel,
   Link,
   List,
