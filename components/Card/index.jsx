@@ -11,9 +11,9 @@ const Card = ({ children, slug, className }) => {
   );
 };
 
-const CardContent = ({ children }) => {
+const CardContent = ({ children, className }) => {
   return (
-    <Box className="py-6 sm:py-8 px-4 sm:px-8">
+    <Box className={classnames(className, 'py-6 sm:py-8 px-4 sm:px-8')}>
       {children}
     </Box>
   );
@@ -45,25 +45,25 @@ const CardDescription = ({ children }) => {
   );
 };
 
-const CardCategory = ({ children }) => {
+const CardCategory = ({ children, className }) => {
   return (
-    <span className="font-semibold text-indigo-600 uppercase">
+    <span className={classnames(className, 'font-semibold text-indigo-600 uppercase')}>
       {children}
     </span>
   );
 };
 
-const CardDateTime = ({ children }) => {
+const CardDateTime = ({ children, className }) => {
   return (
-    <span className="font-semibold uppercase">
+    <span className={classnames(className, 'font-semibold uppercase')}>
       {children}
     </span>
   );
 };
 
-const CardLocation = ({ children, iconClassName }) => {
+const CardLocation = ({ children, className, iconClassName }) => {
   return (
-    <div className="inline-flex items-center">
+    <div className={classnames(className, 'inline-flex items-center')}>
       <LocationIcon className={classnames(iconClassName, 'h-5 w-5 mr-1')} />
       <span className="typo-intro">
         {children}
@@ -72,9 +72,9 @@ const CardLocation = ({ children, iconClassName }) => {
   );
 };
 
-const CardTeam = ({ children }) => {
+const CardTeam = ({ children, className }) => {
   return (
-    <span className="typo-body">
+    <span className={classnames(className, 'typo-body')}>
       {children}
     </span>
   );
