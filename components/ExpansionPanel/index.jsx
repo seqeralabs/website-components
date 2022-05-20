@@ -58,7 +58,7 @@ ExpansionPanel.propTypes = propTypes;
 ExpansionPanel.defaultProps = defaultProps;
 
 const ExpansionPanelSummary = ({ children }) => {
-    const { expanded, toggleExpanded, marked, iconClassName } = useContext(ExpansionContext);
+    const { expanded, toggleExpanded, marked, iconClassName, activeIconClassName } = useContext(ExpansionContext);
 
     return (
         <div
