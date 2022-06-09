@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { navigate } from 'gatsby';
 import React from 'react';
-import { Box, Link, LocationIcon } from 'website-components';
+import { Box, Link, LocationIcon } from '../..';
 
 const Card = ({ children, slug, className }) => {
   return (
