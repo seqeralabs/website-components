@@ -28,7 +28,6 @@ Submit.args = {
   children: `Submit`,
   variant: 'primary',
   theme: 'default',
-  className: 'm-lg',
   size: 'sm',
   submit: true
 };
