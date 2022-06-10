@@ -15,18 +15,6 @@ export default {
 const Template = (args) => (
     <div className='flex flex-col gap-3'>
       <div className="flex gap-3">
-        <Button variant="primary" theme="default" size="lg">Button</Button>
-        <Button variant="primary" theme="default" size="lg" arrow="true" id="primary-hovered">Button</Button>
-        <Button variant="primary" theme="alternative" size="lg">Button</Button>
-        <Button variant="primary" theme="alternative" size="lg" arrow="true" id="alt-hovered">Button</Button>
-      </div>
-      <div className="flex gap-3">
-        <Button variant="secondary" theme="default" size="lg">Button</Button>
-        <Button variant="secondary" theme="default" size="lg" id="secondary-hovered">Button</Button>
-        <Button variant="secondary" theme="alternative" size="lg">Button</Button>
-        <Button variant="secondary" theme="alternative" size="lg" id="alt-hovered">Button</Button>
-      </div>
-      <div className="flex gap-3">
         <Button variant="primary" theme="default" size="md">Button</Button>
         <Button variant="primary" theme="default" size="md" arrow="true" id="primary-hovered">Button</Button>
         <Button variant="primary" theme="alternative" size="md">Button</Button>
