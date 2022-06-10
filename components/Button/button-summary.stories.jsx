@@ -1,5 +1,6 @@
 import { Button } from '../..';
 import React from 'react';
+import { withDesign } from 'storybook-addon-designs';
 
  
 export default {
@@ -10,6 +11,7 @@ export default {
   argTypes: {
     
   },
+  decorators: [withDesign]  
 };
 
 const Template = (args) => (
@@ -41,3 +43,9 @@ const Template = (args) => (
     </div>
   );
   export const Summary = Template.bind({});
+  Summary.parameters = {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/NUJ1no9YcNJBsdfBuQRqnj/?node-id=222%3A67',
+    },
+  };
