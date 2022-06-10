@@ -5,7 +5,7 @@ module.exports = {
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
     "../components/**/*.stories.@(js|jsx|tsx)"
   ],
-  staticDirs: ['./components/styles'],
+  staticDirs: ['../components/styles'],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
