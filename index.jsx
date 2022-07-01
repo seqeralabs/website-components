@@ -16,6 +16,7 @@ import Card from './components/Card';
 import ExpansionPanel from './components/ExpansionPanel';
 import Link from './components/Link';
 import List from './components/List';
+import Marquee from './components/Marquee';
 import Reveal from './components/Reveal';
 import RevealOnScroll from './components/RevealOnScroll';
 import RevealOnView from './components/RevealOnView';
@@ -40,6 +41,7 @@ export {
   ExpansionPanel,
   Link,
   List,
+  Marquee,
   Reveal,
   RevealOnScroll,
   RevealOnView,
