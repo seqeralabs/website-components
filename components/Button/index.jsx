@@ -46,7 +46,7 @@ const Button = ({
 }) => {
     const buttonClassName = classnames(
         className,
-        'group font-body font-medium leading-none inline-flex items-center justify-center antialiased border-0 select-none transition-all duration-200',
+        'group font-body font-medium leading-none inline-flex items-center justify-center antialiased select-none transition-all duration-200',
         {
             'shadow': !noShadow,
             'bg-transparent': variant === 'reset',
