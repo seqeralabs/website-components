@@ -137,7 +137,7 @@ AccordionDetail.defaultProps = {
     children: null,
 };
 
-const AccordionGroup = ({ children, className, activeClassName, iconClassName, activeIconClassName }) => (
+const Accordion = ({ children, className, activeClassName, iconClassName, activeIconClassName }) => (
     <div role="tablist">
         {React.Children.map(children, item => (
             <div className="mt-4 first:mt-0">
