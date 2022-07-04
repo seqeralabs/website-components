@@ -47,9 +47,9 @@ const AccordionItem = ({
             [className]: !isSSR && !marked,
             [activeClassName]: !isSSR && marked,
         })}>
-            <ExpansionContext.Provider value={{ expanded, toggleExpanded, marked, iconClassName, activeIconClassName }}>
+            <AccordionContext.Provider value={{ expanded, toggleExpanded, marked, iconClassName, activeIconClassName }}>
                 {children}
-            </ExpansionContext.Provider>
+            </AccordionContext.Provider>
         </div>
     );
 };
@@ -58,7 +58,7 @@ AccordionItem.propTypes = propTypes;
 AccordionItem.defaultProps = defaultProps;
 
 const AccordionSummary = ({ children }) => {
-    const { expanded, toggleExpanded, marked, iconClassName, activeIconClassName } = useContext(ExpansionContext);
+    const { expanded, toggleExpanded, marked, iconClassName, activeIconClassName } = useContext(AccordionContext);
 
     return (
         <div
@@ -103,7 +103,7 @@ AccordionSummary.defaultProps = {
 };
 
 const AccordionDetail = ({ children }) => {
-    const { expanded } = useContext(ExpansionContext);
+    const { expanded } = useContext(AccordionContext);
 
     return (
         <AnimatePresence initial={false}>
