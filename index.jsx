@@ -1,6 +1,7 @@
 import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
 import CheckIcon from './components/icons/CheckIcon';
+import GitHubIcon from './components/GitHubIcon';
 import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
 import MailIcon from './components/icons/MailIcon';
@@ -27,6 +28,7 @@ export {
   ArrowRightIcon,
   BulletIcon,
   CheckIcon,
+  GitHubIcon,
   LinkedInIcon,
   LocationIcon,
   MailIcon,
