@@ -28,9 +28,9 @@ const defaultProps = {
     marked: false,
 };
 
-const ExpansionContext = createContext();
+const AccordionContext = createContext();
 
-const ExpansionPanel = ({
+const AccordionItem = ({
     children,
     defaultExpanded,
     marked,
@@ -54,10 +54,10 @@ const ExpansionPanel = ({
     );
 };
 
-ExpansionPanel.propTypes = propTypes;
-ExpansionPanel.defaultProps = defaultProps;
+AccordionItem.propTypes = propTypes;
+AccordionItem.defaultProps = defaultProps;
 
-const ExpansionPanelSummary = ({ children }) => {
+const AccordionSummary = ({ children }) => {
     const { expanded, toggleExpanded, marked, iconClassName, activeIconClassName } = useContext(ExpansionContext);
 
     return (
@@ -94,15 +94,15 @@ const ExpansionPanelSummary = ({ children }) => {
     );
 };
 
-ExpansionPanelSummary.propTypes = {
+AccordionSummary.propTypes = {
     children: PropTypes.node,
 };
 
-ExpansionPanelSummary.defaultProps = {
+AccordionSummary.defaultProps = {
     children: null,
 };
 
-const ExpansionPanelDetail = ({ children }) => {
+const AccordionDetail = ({ children }) => {
     const { expanded } = useContext(ExpansionContext);
 
     return (
@@ -129,15 +129,15 @@ const ExpansionPanelDetail = ({ children }) => {
     );
 };
 
-ExpansionPanelDetail.propTypes = {
+AccordionDetail.propTypes = {
     children: PropTypes.node,
 };
 
-ExpansionPanelDetail.defaultProps = {
+AccordionDetail.defaultProps = {
     children: null,
 };
 
-const ExpansionPanelGroup = ({ children, className, activeClassName, iconClassName, activeIconClassName }) => (
+const AccordionGroup = ({ children, className, activeClassName, iconClassName, activeIconClassName }) => (
     <div role="tablist">
         {React.Children.map(children, item => (
             <div className="mt-4 first:mt-0">
@@ -152,7 +152,7 @@ const ExpansionPanelGroup = ({ children, className, activeClassName, iconClassNa
     </div>
 );
 
-ExpansionPanelGroup.propTypes = {
+Accordion.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
     activeClassName: PropTypes.string,
@@ -160,7 +160,7 @@ ExpansionPanelGroup.propTypes = {
     activeIconClassName: PropTypes.string,
 };
 
-ExpansionPanelGroup.defaultProps = {
+Accordion.defaultProps = {
     children: null,
     className: '',
     activeClassName: '',
@@ -168,8 +168,8 @@ ExpansionPanelGroup.defaultProps = {
     activeIconClassName: '',
 };
 
-ExpansionPanel.Summary = ExpansionPanelSummary;
-ExpansionPanel.Detail = ExpansionPanelDetail;
-ExpansionPanel.Group = ExpansionPanelGroup;
+Accordion.Summary = AccordionSummary;
+Accordion.Detail = AccordionDetail;
+Accordion.Item = AccordionItem;
 
-export default ExpansionPanel;
+export default Accordion;

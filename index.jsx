@@ -9,11 +9,11 @@ import SpotifyIcon from './components/icons/SpotifyIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 
+import Accordion from './components/Accordion';
 import BlogPostMeta from './components/BlogPostMeta';
 import Box from './components/Box';
 import Button from './components/Button';
 import Card from './components/Card';
-import ExpansionPanel from './components/ExpansionPanel';
 import Link from './components/Link';
 import List from './components/List';
 import Marquee from './components/Marquee';
@@ -34,11 +34,11 @@ export {
   SpotifyIcon,
   TwitterIcon,
   YoutubeIcon,
+  Accordion,
   BlogPostMeta,
   Box,
   Button,
   Card,
-  ExpansionPanel,
   Link,
   List,
   Marquee,
