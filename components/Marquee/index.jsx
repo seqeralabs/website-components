@@ -4,23 +4,34 @@ const Marquee = ({ children }) => {
   return (
     <div className="bg-black text-white py-2">
       <div className="overflow-x-hidden whitespace-nowrap">
-        <div className="inline-block relative animate-scroll">
+        <div className="inline-block relative animate-scroll mr-8">
           {children}
         </div>
-        {' '}
-        <div className="inline-block relative animate-scroll">
+        <div className="inline-block relative animate-scroll mr-8">
           {children}
         </div>
-        {' '}
-        <div className="inline-block relative animate-scroll">
+        <div className="inline-block relative animate-scroll mr-8">
           {children}
         </div>
-        {' '}
-        <div className="inline-block relative animate-scroll">
+        <div className="inline-block relative animate-scroll mr-8">
           {children}
         </div>
-        {' '}
-        <div className="inline-block relative animate-scroll">
+        <div className="inline-block relative animate-scroll mr-8">
+          {children}
+        </div>
+        <div className="inline-block relative animate-scroll mr-8">
+          {children}
+        </div>
+        <div className="inline-block relative animate-scroll mr-8">
+          {children}
+        </div>
+        <div className="inline-block relative animate-scroll mr-8">
+          {children}
+        </div>
+        <div className="inline-block relative animate-scroll mr-8">
+          {children}
+        </div>
+        <div className="inline-block relative animate-scroll mr-8">
           {children}
         </div>
       </div>
