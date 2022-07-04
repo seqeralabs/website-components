@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import { ArrowRightIcon, Link } from 'website-components';
+import { ArrowRightIcon, Link } from '../..';
 
 import PropTypes from '../../utils/PropTypes';
 import warning from '../../utils/warning';

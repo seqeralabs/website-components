@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import { Link, LinkedInIcon, MailIcon, TwitterIcon } from 'website-components';
+import { Link, LinkedInIcon, MailIcon, TwitterIcon } from '../..';
 
 import PropTypes from '../../utils/PropTypes';
 

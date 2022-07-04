@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { createContext, useState, useContext, useCallback } from 'react';
-import { Box, CheckIcon, PlusIcon } from 'website-components';
+import { Box, CheckIcon, PlusIcon } from '../..';
 
 import isSSR from '../../utils/isSSR';
 import preventDefault from '../../utils/preventDefault';
