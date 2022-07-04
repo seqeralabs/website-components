@@ -35,6 +35,7 @@ const AccordionItem = ({
     defaultExpanded,
     marked,
     className,
+    inactiveClassName,
     activeClassName,
     iconClassName,
     activeIconClassName,
@@ -43,8 +44,8 @@ const AccordionItem = ({
     const toggleExpanded = useCallback(() => setExpanded(!expanded), [expanded, setExpanded]);
 
     return (
-        <div className={classnames('shadow rounded-md overflow-hidden', {
-            [className]: !isSSR && !marked,
+        <div className={classnames('shadow rounded-md overflow-hidden', className, {
+            [inactiveClassName]: !isSSR && !marked,
             [activeClassName]: !isSSR && marked,
         })}>
             <AccordionContext.Provider value={{ expanded, toggleExpanded, marked, iconClassName, activeIconClassName }}>
