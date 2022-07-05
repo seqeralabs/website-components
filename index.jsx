@@ -6,9 +6,12 @@ import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
 import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
+import SlackIcon from './components/icons/SlackIcon';
+import SeqeraIcon from './components/icons/SeqeraIcon';
 import SpotifyIcon from './components/icons/SpotifyIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
+import YoutubeRectangleIcon from './components/icons/YoutubeRectangleIcon';
 
 import Accordion from './components/Accordion';
 import BlogPostMeta from './components/BlogPostMeta';
@@ -33,9 +36,12 @@ export {
   LocationIcon,
   MailIcon,
   PlusIcon,
+  SeqeraIcon,
+  SlackIcon,
   SpotifyIcon,
   TwitterIcon,
   YoutubeIcon,
+  YoutubeRectangleIcon,
   Accordion,
   BlogPostMeta,
   Box,
