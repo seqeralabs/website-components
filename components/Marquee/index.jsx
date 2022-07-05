@@ -1,10 +1,11 @@
 import classnames from 'classnames';
+import { navigate } from 'gatsby';
 import React from 'react';
 import PropTypes from '../../utils/PropTypes';
 
-const Marquee = ({ children, className }) => {
+const Marquee = ({ children, className, to }) => {
   return (
-    <div className={classnames('bg-black text-white py-2', className)}>
+    <div onClick={() => { to ? navigate(to) : null }} className={classnames('bg-black text-white py-2', className)}>
       <div className="overflow-x-hidden whitespace-nowrap">
         <div className="inline-block relative animate-scroll mr-8">
           {children}
