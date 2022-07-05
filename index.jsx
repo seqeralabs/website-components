@@ -5,6 +5,7 @@ import GitHubIcon from './components/icons/GitHubIcon';
 import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
 import MailIcon from './components/icons/MailIcon';
+import MapMarkerIcon from './components/icons/MapMarkerIcon';
 import PlusIcon from './components/icons/PlusIcon';
 import SlackIcon from './components/icons/SlackIcon';
 import SeqeraIcon from './components/icons/SeqeraIcon';
