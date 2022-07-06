@@ -5,6 +5,7 @@ import CheckIcon from './components/icons/CheckIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
 import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
+import MenuIcon from './components/icons/MenuIcon';
 import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
 import SlackIcon from './components/icons/SlackIcon';
@@ -36,6 +37,7 @@ export {
   GitHubIcon,
   LinkedInIcon,
   LocationIcon,
+  MenuIcon,
   MailIcon,
   PlusIcon,
   SeqeraIcon,
