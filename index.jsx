@@ -2,6 +2,7 @@ import AngleLeftIcon from './components/icons/AngleLeftIcon';
 import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
 import CheckIcon from './components/icons/CheckIcon';
+import CloseIcon from './components/icons/CloseIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
 import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
@@ -34,6 +35,7 @@ export {
   ArrowRightIcon,
   BulletIcon,
   CheckIcon,
+  CloseIcon,
   GitHubIcon,
   LinkedInIcon,
   LocationIcon,
