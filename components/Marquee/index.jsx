@@ -7,34 +7,34 @@ const Marquee = ({ children, className, to }) => {
   return (
     <div onClick={() => { to ? navigate(to) : null }} className={classnames('bg-black text-white py-2 cursor-pointer', className)}>
       <div className="overflow-x-hidden whitespace-nowrap">
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
-        <div className="inline-block relative animate-scroll mr-8">
+        <div className="inline-block relative animate-scroll transform-gpu mr-8">
           {children}
         </div>
       </div>
