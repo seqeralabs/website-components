@@ -12,6 +12,7 @@ import PlusIcon from './components/icons/PlusIcon';
 import SlackIcon from './components/icons/SlackIcon';
 import SeqeraIcon from './components/icons/SeqeraIcon';
 import SpotifyIcon from './components/icons/SpotifyIcon';
+import StarIcon from './components/icons/StarIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 import YoutubeRectangleIcon from './components/icons/YoutubeRectangleIcon';
@@ -45,6 +46,7 @@ export {
   SeqeraIcon,
   SlackIcon,
   SpotifyIcon,
+  StarIcon,
   TwitterIcon,
   YoutubeIcon,
   YoutubeRectangleIcon,
