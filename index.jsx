@@ -1,3 +1,4 @@
+import AngleDownIcon from './components/icons/AngleDownIcon';
 import AngleLeftIcon from './components/icons/AngleLeftIcon';
 import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
@@ -32,6 +33,7 @@ import ScrollSnap from './components/ScrollSnap';
 import SharingButtons from './components/SharingButtons';
 
 export {
+  AngleDownIcon,
   AngleLeftIcon,
   ArrowRightIcon,
   BulletIcon,
