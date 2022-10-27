@@ -24,6 +24,7 @@ import BlogPostMeta from './components/BlogPostMeta';
 import Box from './components/Box';
 import Button from './components/Button';
 import Card from './components/Card';
+import Footer from './components/Footer';
 import Link from './components/Link';
 import List from './components/List';
 import Marquee from './components/Marquee';
@@ -59,6 +60,7 @@ export {
   Box,
   Button,
   Card,
+  Footer,
   Link,
   List,
   Marquee,
