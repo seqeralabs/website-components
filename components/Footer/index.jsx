@@ -1,4 +1,5 @@
 import { GatsbyImage as Image, getImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import GitHubIcon from '../icons/GitHubIcon';
@@ -6,15 +7,29 @@ import LinkedInIcon from '../icons/LinkedInIcon';
 import TwitterIcon from '../icons/TwitterIcon';
 import Link from '../Link';
 
-const Footer = ({ logoImage, jobsCount }) => {
+const propTypes = {
+  logoImage: PropTypes.object.isRequired,
+  jobsCount: PropTypes.number,
+  linksDomain: PropTypes.string,
+};
+
+const defaultProps = {
+  logoImage: null,
+  jobsCount: 0,
+  linksDomain: 'https://seqera.io',
+};
+
+const Footer = ({ logoImage, jobsCount, linksDomain }) => {
   return (
     <>
       <footer className="bg-blue-800 text-gray-200 py-16">
         <div className="container-lg">
           <div className="row">
-            <div className="col-full">
-              <Image image={getImage(logoImage)} alt="Seqera Labs logo" className="h-6 md:h-7" />
-            </div>
+            {logoImage && (
+              <div className="col-full">
+                <Image image={getImage(logoImage)} alt="Seqera Labs logo" className="h-6 md:h-7" />
+              </div>
+            )}
           </div>
           <div className="row">
             <div className="col-6 md:col-4 lg:col-2 mt-8">
@@ -23,12 +38,12 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/nextflow/" noBorder>
+                  <Link to={`${linksDomain}/nextflow/`} noBorder>
                     Nextflow
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/tower/" noBorder>
+                  <Link to={`${linksDomain}/tower/`} noBorder>
                     Nextflow Tower
                   </Link>
                 </div>
@@ -45,17 +60,17 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/customers/scilifelab/" noBorder>
+                  <Link to={`${linksDomain}/customers/scilifelab/`} noBorder>
                     SciLifeLab
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/customers/gritstone/" noBorder>
+                  <Link to={`${linksDomain}/customers/gritstone/`} noBorder>
                     Gritstone bio
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/customers/imeka/" noBorder>
+                  <Link to={`${linksDomain}/customers/imeka/`} noBorder>
                     Imeka
                   </Link>
                 </div>
@@ -67,17 +82,17 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/amazon-web-services/" noBorder>
+                  <Link to={`${linksDomain}/amazon-web-services/`} noBorder>
                     AWS
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/google-cloud/" noBorder>
+                  <Link to={`${linksDomain}/google-cloud/`} noBorder>
                     Google Cloud
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/microsoft-azure/" noBorder>
+                  <Link to={`${linksDomain}/microsoft-azure/`} noBorder>
                     Azure
                   </Link>
                 </div>
@@ -89,22 +104,22 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/docs/" noBorder>
+                  <Link to={`${linksDomain}/docs/`} noBorder>
                     Seqera Docs
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/whitepaper/" noBorder>
+                  <Link to={`${linksDomain}/whitepaper/`} noBorder>
                     Whitepaper
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/podcasts/" noBorder>
+                  <Link to={`${linksDomain}/podcasts/`} noBorder>
                     Podcasts
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/training/" noBorder>
+                  <Link to={`${linksDomain}/training/`} noBorder>
                     Nextflow Training
                   </Link>
                 </div>
@@ -116,17 +131,17 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/events/talks/" noBorder>
+                  <Link to={`${linksDomain}/events/talks/`} noBorder>
                     Talks
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/events/workshops/" noBorder>
+                  <Link to={`${linksDomain}/events/workshops/`} noBorder>
                     Workshops
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/events/webinars/" noBorder>
+                  <Link to={`${linksDomain}/events/webinars/`} noBorder>
                     Webinars
                   </Link>
                 </div>
@@ -138,22 +153,22 @@ const Footer = ({ logoImage, jobsCount }) => {
               </h2>
               <div className="mt-4">
                 <div className="typo-small">
-                  <Link to="/about/" noBorder>
+                  <Link to={`${linksDomain}/about/`} noBorder>
                     About Us
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/blog/" noBorder>
+                  <Link to={`${linksDomain}/blog/`} noBorder>
                     Blog
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/news/" noBorder>
+                  <Link to={`${linksDomain}/news/`} noBorder>
                     Press
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="/careers/" noBorder className="inline-flex items-center">
+                  <Link to={`${linksDomain}/careers/`} noBorder className="inline-flex items-center">
                     Careers
                     <span className="bg-indigo-600 text-white text-xs text-center flex items-center justify-center h-7 w-7 rounded-full font-medium ml-3">
                       {jobsCount}
@@ -218,7 +233,7 @@ const Footer = ({ logoImage, jobsCount }) => {
                   &copy; Seqera Labs, 2018-2022
                 </small>
                 {' | '}
-                <Link to="/privacy-policy/" noBorder>
+                <Link to={`${linksDomain}/privacy-policy/`} noBorder>
                   Privacy Policy
                 </Link>
                 {' | '}
