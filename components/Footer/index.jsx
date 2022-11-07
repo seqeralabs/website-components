@@ -249,4 +249,7 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
   );
 };
 
+Footer.propTypes = propTypes;
+Footer.defaultProps = defaultProps;
+
 export default Footer;
