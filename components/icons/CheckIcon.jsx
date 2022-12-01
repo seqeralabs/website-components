@@ -6,7 +6,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-    className: null,
+    className: 'h-6 w-6',
 };
 
 const CheckIcon = ({ className }) => (
