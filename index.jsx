@@ -18,8 +18,8 @@ import SeqeraIcon from './components/icons/SeqeraIcon';
 import SpotifyIcon from './components/icons/SpotifyIcon';
 import StarIcon from './components/icons/StarIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
-import UserIcon from './components/UserIcon';
-import WorkspaceIcon from './components/WorkspaceIcon';
+import UserIcon from './components/icons/UserIcon';
+import WorkspaceIcon from './components/icons/WorkspaceIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 import YoutubeRectangleIcon from './components/icons/YoutubeRectangleIcon';
 
