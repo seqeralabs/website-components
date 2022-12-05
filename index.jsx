@@ -4,6 +4,7 @@ import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
 import CheckIcon from './components/icons/CheckIcon';
 import CloseIcon from './components/icons/CloseIcon';
+import CodeDocsIcon from './components/icons/CodeDocsIcon';
 import DocsIcon from './components/icons/DocsIcon';
 import DownloadIcon from './components/icons/DownloadIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
@@ -15,12 +16,16 @@ import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
 import PyPIIcon from './components/icons/PyPIIcon';
 import RunIcon from './components/icons/RunIcon';
+import SearchDirectoryIcon from './components/icons/SearchDirectoryIcon';
 import SlackIcon from './components/icons/SlackIcon';
+import ShareBoxIcon from './components/icons/ShareBoxIcon';
 import SeqeraIcon from './components/icons/SeqeraIcon';
 import SpotifyIcon from './components/icons/SpotifyIcon';
 import StarIcon from './components/icons/StarIcon';
+import TerminalIcon from './components/icons/TerminalIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import UserIcon from './components/icons/UserIcon';
+import ViewReportIcon from './components/icons/ViewReportIcon';
 import WorkspaceIcon from './components/icons/WorkspaceIcon';
 import YoutubeIcon from './components/icons/YoutubeIcon';
 import YoutubeRectangleIcon from './components/icons/YoutubeRectangleIcon';
@@ -47,6 +52,7 @@ export {
   BulletIcon,
   CheckIcon,
   CloseIcon,
+  CodeDocsIcon,
   DocsIcon,
   DownloadIcon,
   GitHubIcon,
@@ -57,12 +63,16 @@ export {
   MailIcon,
   PlusIcon,
   RunIcon,
+  SearchDirectoryIcon,
   SeqeraIcon,
   SlackIcon,
+  ShareBoxIcon,
   SpotifyIcon,
   StarIcon,
+  TerminalIcon,
   TwitterIcon,
   UserIcon,
+  ViewReportIcon,
   WorkspaceIcon,
   YoutubeIcon,
   YoutubeRectangleIcon,
