@@ -4,6 +4,7 @@ import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
 import CheckIcon from './components/icons/CheckIcon';
 import CloseIcon from './components/icons/CloseIcon';
+import DocsIcon from './components/icons/DocsIcon';
 import DownloadIcon from './components/icons/DownloadIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
 import HistoryIcon from './components/icons/HistoryIcon';
@@ -12,6 +13,7 @@ import LocationIcon from './components/icons/LocationIcon';
 import MenuIcon from './components/icons/MenuIcon';
 import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
+import PyPIIcon from './components/icons/PyPIIcon';
 import RunIcon from './components/icons/RunIcon';
 import SlackIcon from './components/icons/SlackIcon';
 import SeqeraIcon from './components/icons/SeqeraIcon';
@@ -45,6 +47,7 @@ export {
   BulletIcon,
   CheckIcon,
   CloseIcon,
+  DocsIcon,
   DownloadIcon,
   GitHubIcon,
   HistoryIcon,
@@ -72,6 +75,7 @@ export {
   Link,
   List,
   Marquee,
+  PyPIIcon,
   Reveal,
   RevealOnScroll,
   RevealOnView,
