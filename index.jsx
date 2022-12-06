@@ -8,6 +8,7 @@ import CodeDocsIcon from './components/icons/CodeDocsIcon';
 import DocsIcon from './components/icons/DocsIcon';
 import DownloadIcon from './components/icons/DownloadIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
+import GitterIcon from './components/icons/GitterIcon';
 import HistoryIcon from './components/icons/HistoryIcon';
 import LinkedInIcon from './components/icons/LinkedInIcon';
 import LocationIcon from './components/icons/LocationIcon';
@@ -16,6 +17,7 @@ import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
 import PyPIIcon from './components/icons/PyPIIcon';
 import PythonIcon from './components/icons/PythonIcon';
+import QuoteIcon from './components/icons/QuoteIcon';
 import RunIcon from './components/icons/RunIcon';
 import SearchDirectoryIcon from './components/icons/SearchDirectoryIcon';
 import SlackIcon from './components/icons/SlackIcon';
@@ -24,6 +26,7 @@ import SeqeraIcon from './components/icons/SeqeraIcon';
 import SpotifyIcon from './components/icons/SpotifyIcon';
 import StarIcon from './components/icons/StarIcon';
 import TerminalIcon from './components/icons/TerminalIcon';
+import ToolIcon from './components/icons/ToolIcon';
 import TwitterIcon from './components/icons/TwitterIcon';
 import UserIcon from './components/icons/UserIcon';
 import ViewReportIcon from './components/icons/ViewReportIcon';
@@ -57,6 +60,7 @@ export {
   DocsIcon,
   DownloadIcon,
   GitHubIcon,
+  GitterIcon,
   HistoryIcon,
   LinkedInIcon,
   LocationIcon,
@@ -64,6 +68,7 @@ export {
   MailIcon,
   PlusIcon,
   PythonIcon,
+  QuoteIcon,
   RunIcon,
   SearchDirectoryIcon,
   SeqeraIcon,
@@ -72,6 +77,7 @@ export {
   SpotifyIcon,
   StarIcon,
   TerminalIcon,
+  ToolIcon,
   TwitterIcon,
   UserIcon,
   ViewReportIcon,
