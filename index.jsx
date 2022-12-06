@@ -15,6 +15,7 @@ import MenuIcon from './components/icons/MenuIcon';
 import MailIcon from './components/icons/MailIcon';
 import PlusIcon from './components/icons/PlusIcon';
 import PyPIIcon from './components/icons/PyPIIcon';
+import PythonIcon from './components/icons/PythonIcon';
 import RunIcon from './components/icons/RunIcon';
 import SearchDirectoryIcon from './components/icons/SearchDirectoryIcon';
 import SlackIcon from './components/icons/SlackIcon';
@@ -62,6 +63,7 @@ export {
   MenuIcon,
   MailIcon,
   PlusIcon,
+  PythonIcon,
   RunIcon,
   SearchDirectoryIcon,
   SeqeraIcon,
