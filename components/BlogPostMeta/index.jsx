@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import Image from 'gatsby-image';
+import { getImage, GatsbyImage as Image } from 'gatsby-plugin-image';
 import React from 'react';
 
 import PropTypes from '../../utils/PropTypes';
@@ -16,8 +16,9 @@ const BlogPostMeta = ({ post, className }) => {
         {post.authors.map((author) => (
           <Image
             alt={author.name}
-            fixed={author.image.childImageSharp.fixed}
+            image={getImage(author.image)}
             className="rounded-full h-8 w-8 -ml-1 first:ml-0"
+            imgClassName="rounded-full"
             key={author.name}
           />
         ))}
