@@ -34,121 +34,6 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
           <div className="row">
             <div className="col-6 md:col-4 lg:col-2 mt-8">
               <h2 className="typo-h6 text-white mb-4">
-                Products
-              </h2>
-              <div className="mt-4">
-                <div className="typo-small">
-                  <Link to={`${linksDomain}/nextflow/`} noBorder>
-                    Nextflow
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/tower/`} noBorder>
-                    Nextflow Tower
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to="https://tower.nf/" noBorder>
-                    Tower Cloud
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
-              <h2 className="typo-h6 text-white mb-4">
-                Use Cases
-              </h2>
-              <div className="mt-4">
-                <div className="typo-small">
-                  <Link to={`${linksDomain}/customers/scilifelab/`} noBorder>
-                    SciLifeLab
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/customers/gritstone/`} noBorder>
-                    Gritstone bio
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/customers/imeka/`} noBorder>
-                    Imeka
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
-              <h2 className="typo-h6 text-white mb-4">
-                Partners
-              </h2>
-              <div className="mt-4">
-                <div className="typo-small">
-                  <Link to={`${linksDomain}/amazon-web-services/`} noBorder>
-                    AWS
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/google-cloud/`} noBorder>
-                    Google Cloud
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/microsoft-azure/`} noBorder>
-                    Azure
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
-              <h2 className="typo-h6 text-white mb-4">
-                Learn
-              </h2>
-              <div className="mt-4">
-                <div className="typo-small">
-                  <Link to={`${linksDomain}/docs/`} noBorder>
-                    Seqera Docs
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/whitepaper/`} noBorder>
-                    Whitepaper
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/podcasts/`} noBorder>
-                    Podcasts
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/training/`} noBorder>
-                    Nextflow Training
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
-              <h2 className="typo-h6 text-white mb-4">
-                Events
-              </h2>
-              <div className="mt-4">
-                <div className="typo-small">
-                  <Link to={`${linksDomain}/events/talks/`} noBorder>
-                    Talks
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/events/workshops/`} noBorder>
-                    Workshops
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/events/webinars/`} noBorder>
-                    Webinars
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
-              <h2 className="typo-h6 text-white mb-4">
                 Company
               </h2>
               <div className="mt-4">
@@ -158,13 +43,18 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/blog/`} noBorder>
-                    Blog
+                  <Link to={`${linksDomain}/amazon-web-services/`} noBorder>
+                    Partners and platforms: AWS
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/news/`} noBorder>
-                    Press
+                  <Link to={`${linksDomain}/google-cloud/`} noBorder>
+                    Partners and platforms: Google
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/microsoft-azure/`} noBorder>
+                    Partners and platforms: Azure
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
@@ -178,6 +68,119 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                 <div className="typo-small mt-3">
                   <Link to="https://support.seqera.io/" noBorder>
                     Support
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 md:col-4 lg:col-2 mt-8">
+              <h2 className="typo-h6 text-white mb-4">
+                Products
+              </h2>
+              <div className="mt-4">
+                <div className="typo-small">
+                  <Link to={`${linksDomain}/nextflow/`} noBorder>
+                    Nextflow
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/tower/`} noBorder>
+                    Tower Enterprise
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to="https://tower.nf/" noBorder>
+                    Tower Cloud
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to="/wave/" noBorder>
+                    Wave Containers
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to="/fusion/" noBorder>
+                    Fusion
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 md:col-4 lg:col-2 mt-8">
+              <h2 className="typo-h6 text-white mb-4">
+                Case Studies
+              </h2>
+              <div className="mt-4">
+                <div className="typo-small">
+                  <Link to={`${linksDomain}/case-studies/scilifelab/`} noBorder>
+                    SciLifeLab
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/case-studies/gritstone/`} noBorder>
+                    Gritstone bio
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/case-studies/imeka/`} noBorder>
+                    Imeka
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 md:col-4 lg:col-2 mt-8">
+              <h2 className="typo-h6 text-white mb-4">
+                Learn
+              </h2>
+              <div className="mt-4">
+                <div className="typo-small">
+                  <Link to={`${linksDomain}/blog/`} noBorder>
+                    Blog
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/podcasts/`} noBorder>
+                    Podcasts channels
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/ebooks/`} noBorder>
+                    Ebooks
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/whitepaper/`} noBorder>
+                    Whitepaper
+                  </Link>
+                </div>
+                <div className="typo-small">
+                  <Link to={`${linksDomain}/docs/`} noBorder>
+                    Documentation
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/nextflow/learn/`} noBorder>
+                    Nextflow resources
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/nextflow/workshop/`} noBorder>
+                    Nextflow training workshop
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 md:col-4 lg:col-2 mt-8">
+              <h2 className="typo-h6 text-white mb-4">
+                Events
+              </h2>
+              <div className="mt-4">
+                <div className="typo-small">
+                  <Link to={`${linksDomain}/events/webinars-and-talks/`} noBorder>
+                    Webinars and talks
+                  </Link>
+                </div>
+                <div className="typo-small mt-3">
+                  <Link to={`${linksDomain}/events/conferences/`} noBorder>
+                    Conferences
                   </Link>
                 </div>
               </div>
