@@ -32,7 +32,7 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
             )}
           </div>
           <div className="row">
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
+            <div className="col-6 md:col-4 lg:col-3 mt-8">
               <h2 className="typo-h6 text-white mb-4">
                 Company
               </h2>
@@ -126,7 +126,7 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                 </div>
               </div>
             </div>
-            <div className="col-6 md:col-4 lg:col-2 mt-8">
+            <div className="col-6 md:col-4 lg:col-3 mt-8">
               <h2 className="typo-h6 text-white mb-4">
                 Learn
               </h2>
@@ -147,11 +147,11 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/whitepaper/`} noBorder>
+                  <Link to={`${linksDomain}/whitepapers/`} noBorder>
                     Whitepaper
                   </Link>
                 </div>
-                <div className="typo-small">
+                <div className="typo-small mt-3">
                   <Link to={`${linksDomain}/docs/`} noBorder>
                     Documentation
                   </Link>
