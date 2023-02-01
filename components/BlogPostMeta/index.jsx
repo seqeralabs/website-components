@@ -4,7 +4,7 @@ import React from 'react';
 
 import PropTypes from '../../utils/PropTypes';
 
-const BlogPostMeta = ({ post, className }) => {
+const BlogPostMeta = ({ post, className, authorsLabel }) => {
   return post && (
     <div className={
       classnames(
@@ -23,14 +23,21 @@ const BlogPostMeta = ({ post, className }) => {
           />
         ))}
       </div>
-      <span className="text-indigo-600">
-        {post.authors[0].name}
-        {post.authors[1] && (
-          <>
-            {` & ${post.authors[1].name}`}
-          </>
-        )}
-      </span>
+      {post.authors.length < 2 && (
+        <span className="text-indigo-600">
+          {post.authors[0].name}
+          {post.authors[1] && (
+            <>
+              {` & ${post.authors[1].name}`}
+            </>
+          )}
+        </span>
+      )}
+      {post.authors.length > 2 && (
+        <span className="text-indigo-600">
+          {`Several ${authorsLabel}`}
+        </span>
+      )}
       {post.date && (
         <span className="text-gray-400 border-l border-gray-200 ml-2 pl-2">
           {post.date}
@@ -42,6 +49,13 @@ const BlogPostMeta = ({ post, className }) => {
 
 BlogPostMeta.propTypes = {
   post: PropTypes.object.isRequired,
+  className: PropTypes.string,
+  authorsLabel: PropTypes.string,
+};
+
+BlogPostMeta.defaultProps = {
+  className: '',
+  authorsLabel: 'authors',
 };
 
 export default BlogPostMeta;
