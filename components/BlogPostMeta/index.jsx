@@ -23,7 +23,7 @@ const BlogPostMeta = ({ post, className, authorsLabel }) => {
           />
         ))}
       </div>
-      {post.authors.length < 2 && (
+      {post.authors.length <= 2 && (
         <span className="text-indigo-600">
           {post.authors[0].name}
           {post.authors[1] && (
