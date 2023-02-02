@@ -43,13 +43,13 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/news/`} noBorder>
-                    Press
+                  <Link to={`${linksDomain}/partners-and-platforms/`} noBorder>
+                    Partners and platforms
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/partners-and-platforms/`} noBorder>
-                    Partners and platforms
+                  <Link to={`${linksDomain}/news/`} noBorder>
+                    Press
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
