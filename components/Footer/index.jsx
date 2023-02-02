@@ -43,18 +43,8 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/amazon-web-services/`} noBorder>
-                    Partners and platforms: AWS
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/google-cloud/`} noBorder>
-                    Partners and platforms: Google
-                  </Link>
-                </div>
-                <div className="typo-small mt-3">
-                  <Link to={`${linksDomain}/microsoft-azure/`} noBorder>
-                    Partners and platforms: Azure
+                  <Link to={`${linksDomain}/partners-and-platforms/`} noBorder>
+                    Partners and platforms
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
