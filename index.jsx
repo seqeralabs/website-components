@@ -1,12 +1,15 @@
+import AdminIcon from './components/icons/AdminIcon';
 import AngleDownIcon from './components/icons/AngleDownIcon';
 import AngleLeftIcon from './components/icons/AngleLeftIcon';
 import ArrowRightIcon from './components/icons/ArrowRightIcon';
 import BulletIcon from './components/icons/BulletIcon';
+import ChatIcon from './components/icons/ChatIcon';
 import CheckIcon from './components/icons/CheckIcon';
 import CloseIcon from './components/icons/CloseIcon';
 import CodeDocsIcon from './components/icons/CodeDocsIcon';
 import DocsIcon from './components/icons/DocsIcon';
 import DownloadIcon from './components/icons/DownloadIcon';
+import EmailIcon from './components/icons/EmailIcon';
 import GitHubIcon from './components/icons/GitHubIcon';
 import GitterIcon from './components/icons/GitterIcon';
 import HistoryIcon from './components/icons/HistoryIcon';
@@ -50,15 +53,18 @@ import ScrollSnap from './components/ScrollSnap';
 import SharingButtons from './components/SharingButtons';
 
 export {
+  AdminIcon,
   AngleDownIcon,
   AngleLeftIcon,
   ArrowRightIcon,
   BulletIcon,
+  ChatIcon,
   CheckIcon,
   CloseIcon,
   CodeDocsIcon,
   DocsIcon,
   DownloadIcon,
+  EmailIcon,
   GitHubIcon,
   GitterIcon,
   HistoryIcon,
