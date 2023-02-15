@@ -61,7 +61,7 @@ const Footer = ({ logoImage, jobsCount, linksDomain }) => {
                   </Link>
                 </div>
                 <div className="typo-small mt-3">
-                  <Link to="https://support.seqera.io/">
+                  <Link to="https://support.seqera.io/" noBorder>
                     Support
                   </Link>
                 </div>
