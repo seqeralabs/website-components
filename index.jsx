@@ -6,6 +6,7 @@ import BulletIcon from './components/icons/BulletIcon';
 import ChatIcon from './components/icons/ChatIcon';
 import CheckIcon from './components/icons/CheckIcon';
 import CloseIcon from './components/icons/CloseIcon';
+import CloudIcon from './components/icons/CloudIcon';
 import CodeDocsIcon from './components/icons/CodeDocsIcon';
 import DocsIcon from './components/icons/DocsIcon';
 import DownloadIcon from './components/icons/DownloadIcon';

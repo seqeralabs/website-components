@@ -56,7 +56,7 @@ Marquee.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   to: PropTypes.string,
-  type: PropTypes.oneOf(['primary', 'accent']),
+  type: PropTypes.oneOf(['primary', 'accent', 'reset']),
 };
 
 Marquee.defaultProps = {
