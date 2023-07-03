@@ -15,7 +15,7 @@ const ListIcon = ({ type, className }) => {
   }
 };
 
-const List = ({ children, className, iconClassName, type, as }) => {
+const List = ({ children, className, iconClassName, type, as, shrink }) => {
   const Component = as || 'ul';
 
   return (
@@ -26,6 +26,7 @@ const List = ({ children, className, iconClassName, type, as }) => {
         item.type && React.cloneElement(item, {
           type: item.props.type || type,
           iconClassName: item.props.iconClassName || iconClassName,
+          className: !shrink ? `${item.props.className} mt-4 first:mt-4` : item.props.className,
         })
       ))}
     </Component>
@@ -37,6 +38,7 @@ List.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   iconClassName: PropTypes.string,
+  shrink: PropTypes.bool,
   type: PropTypes.oneOf(['check', 'bullet', 'ordered']),
 };
 
@@ -45,13 +47,13 @@ List.defaultProps = {
   children: null,
   className: '',
   iconClassName: 'text-indigo-600',
+  shrink: false,
   type: null,
 };
 
 const ListItem = ({ children, className, iconClassName, type }) => (
   <li className={classnames(
       className,
-      'mt-4 first:mt-0',
       {
           'flex': type !== 'ordered',
       }
